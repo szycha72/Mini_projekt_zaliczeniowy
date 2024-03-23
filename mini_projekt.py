@@ -78,35 +78,35 @@ movies = [
 
 # Sorting the list by movie title (ascending)
 sorted_by_title = sorted(movies, key=lambda x: x.title.lower())
-
+print()
 # Sorting the list by release year (ascending)
 sorted_by_year = sorted(movies, key=lambda x: x.year)
-
+print()
 # Sorting the list by movie rating (descending)
 sorted_by_rating_desc = sorted(movies, key=lambda x: x.rating, reverse=True)
-
+print()
 # Sorting the list by release year, then by rating (ascending)
 sorted_by_year_and_rating = sorted(movies, key=lambda x: (x.year, x.rating))
-
+print()
 # Sorting the list by rating, then by release year (descending)
 sorted_by_rating_and_year_desc = sorted(movies, key=lambda x: (x.rating, x.year), reverse=True)
-
+print()
 print("Sorting by title (ascending):")
 for movie in sorted_by_title:
     print(movie.title)
-
+print()
 print("\nSorting by release year (ascending):")
 for movie in sorted_by_year:
     print(movie.title, movie.year)
-
+print()
 print("\nSorting by rating (descending):")
 for movie in sorted_by_rating_desc:
     print(movie.title, movie.rating)
-
+print()
 print("\nSorting by release year, then by rating (ascending):")
 for movie in sorted_by_year_and_rating:
     print(movie.title, movie.year, movie.rating)
-
+print()
 print("\nSorting by rating, then by release year (descending):")
 for movie in sorted_by_rating_and_year_desc:
     print(movie.title, movie.year, movie.rating)
